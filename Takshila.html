@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takshashila Designs & Marketing Agency</title>
+  <link rel="stylesheet" href="takshila.css">
+  <link rel="shortcut icon" href="./takshila11.jpg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div>
+      <img style="width: 65px; border-radius: 50%;" class="logo" src="./takshila11.jpg" alt="Takshila Logo">
+    </div>
+    <div class="logo">
+      Takshashila Designs & Marketing Agency
+      <p>Your partner in graphic design, web development, and blending services.</p>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to Takshashila Designs</h1>
+      <p>Your partner in graphic design, web development, and blending services.</p>
+      <button class="btn" onclick="scrollToSection('services')">Explore Our Services</button>
+    </div>
+  </section>
+  <script>
+    function toggleMenu() {
+        document.querySelector('header nav ul').classList.toggle('open');
+    }
+    </script>
+  <div style="margin-top: 20px;" class="video-section">
+    <div class="video-item" id="services">
+      <h2 style="color: #003F88; text-align: center;">Blending</h2>
+      <video width="400px" height="280" controls>
+        <source src="./blending project.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-item">
+      <h2 style="color: #003F88; text-align: center;">Web Development</h2>
+      <video width="100%" height="auto" controls>
+        <source src="./4352274-hd_1920_1080_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-item">
+      <h2 style="color: #003F88; text-align: center;">Graphic Designing</h2>
+      <video width="100%" height="auto" controls>
+        <source src="./4465903-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <section id="team">
+    <div class="container">
+      <h2>Our Team</h2>
+      <p>Meet the talented individuals behind Takshashila</p>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="./man-with-beard-shirt_826801-946.avif" alt="Team Member 1">
+          <h3>Priyanshu Sharma</h3>
+          <p>Web Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="./chotu.jpg" alt="Team Member 2">
+          <h3>Jatin Sharma</h3>
+          <p>Graphic Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="./man-with-beard-shirt_826801-946.avif" alt="Team Member 3">
+          <h3>Daksh Jangid</h3>
+          <p>Blending</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pricing-section" id="pricing">
+    <h2>Our Pricing Plans</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <img style="width: 100%;" src="./price.jpg" alt="">
+      </div>
+      <div class="pricing-card">
+        <img style="width: 100%;" src="./price1.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section style="    padding-left: 41px;" id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"The team at Takshashila transformed our brand's identity with their exceptional design skills!"</p>
+      <p>- Sarah J., CEO of Creative Co.</p>
+    </div>
+    <div class="testimonial">
+      <p>"Thanks to their web development services, our online presence has skyrocketed!"</p>
+      <p>- Mark T., Marketing Manager at Innovate Ltd.</p>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>We aim to respond to all inquiries within 24 hours. Your questions are important to us!</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2024 Takshashila Designs & Marketing Agency. All rights reserved.</p>
+  </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        Email.send({
+            Host: "smtp.yourSMTPService.com",
+            Username: "yourUsername",
+            Password: "yourPassword",
+            To: 'jatinsharmamyself@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "New Contact Form Enquiry",
+            Body: "Name: " + document.getElementById("name").value +
+                  "<br> Email: " + document.getElementById("email").value +
+                  "<br> Message: " + document.getElementById("message").value
+        }).then(
+            message => alert("Message Sent Successfully")
+        ).catch(
+            error => alert("Error sending message: " + error.message)
+        );
+    }
+</script>
+
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+  <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq2db19389500f445e312ff4fc85e86efa0b9af66ec1db429fc8b0958c2039787b" defer></script>
+</body>
+</html>
